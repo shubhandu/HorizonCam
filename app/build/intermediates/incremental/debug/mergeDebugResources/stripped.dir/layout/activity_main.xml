@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Camera preview full screen -->
+    <com.horizoncam.GlCameraView
+        android:id="@+id/glCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Stabilization overlay -->
+    <com.horizoncam.OverlayView
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Fade overlay for smooth camera transitions -->
+    <View
+        android:id="@+id/fadeOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Row 1: REC bar + no-gyro warning -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/recBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_rec_bar"
+                android:paddingStart="10dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/recDot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/rec_dot" />
+
+                <TextView
+                    android:id="@+id/tvTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.05"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvNoGyro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No gyroscope"
+                android:textColor="#FFCC00"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="#88000000"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Row 2: Aspect ratio pills -->
+        <LinearLayout
+            android:id="@+id/aspectBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/pill169"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:9"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000000"
+                android:background="@drawable/aspect_pill_selected"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/pill43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:3"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#CCFFFFFF"
+                android:background="@drawable/aspect_pill_default"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/pill11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:1"
+                android:textSize="11sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#CCFFFFFF"
+                android:background="@drawable/aspect_pill_default"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- BOTTOM PANEL -->
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_bottom_panel"
+        android:paddingTop="16dp"
+        android:paddingBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Mode tabs -->
+        <LinearLayout
+            android:id="@+id/modeTabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:id="@+id/tabNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:id="@+id/tabNormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIDEO"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.08" />
+
+                <View
+                    android:id="@+id/tabNormalIndicator"
+                    android:layout_width="24dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/tab_indicator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabHorizon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:id="@+id/tabHorizonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HORIZON LOCK"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.08" />
+
+                <View
+                    android:id="@+id/tabHorizonIndicator"
+                    android:layout_width="24dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/tab_indicator"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Lens toggle (1× / 0.5×) — only visible when ultra-wide available -->
+        <LinearLayout
+            android:id="@+id/lensToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/lens1x"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="1×"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/lens_pill_selected"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/lens05x"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text=".5×"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#CCFFFFFF"
+                android:gravity="center"
+                android:background="@drawable/lens_pill_default" />
+
+        </LinearLayout>
+
+        <!-- Controls row -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp">
+
+            <com.horizoncam.RecordButton
+                android:id="@+id/btnRecord"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center" />
+
+            <com.horizoncam.FlipButton
+                android:id="@+id/btnFlip"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="8dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

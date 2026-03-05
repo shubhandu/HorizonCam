@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\drawable_tab_indicator.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\drawable\\tab_indicator.xml"
+    },
+    {
+        "merged": "com.horizoncam.app-debug-4:/drawable_lens_pill_selected.xml.flat",
+        "source": "com.horizoncam.app-main-6:/drawable/lens_pill_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\drawable_bg_bottom_panel.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\drawable\\bg_bottom_panel.xml"
+    },
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\drawable_aspect_pill_selected.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\drawable\\aspect_pill_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\drawable_bg_rec_bar.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\drawable\\bg_rec_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\drawable_rec_dot.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\drawable\\rec_dot.xml"
+    },
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\drawable_aspect_pill_default.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\drawable\\aspect_pill_default.xml"
+    },
+    {
+        "merged": "com.horizoncam.app-debug-4:/drawable_lens_pill_default.xml.flat",
+        "source": "com.horizoncam.app-main-6:/drawable/lens_pill_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\shubh\\.gradle\\daemon\\8.13\\com.horizoncam.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.horizoncam.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.horizoncam.app-main-6:/layout/activity_main.xml"
+    }
+]

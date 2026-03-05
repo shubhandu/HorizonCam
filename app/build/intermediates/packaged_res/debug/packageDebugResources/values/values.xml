@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_green">#FF00C878</color>
+    <color name="black">#FF000000</color>
+    <color name="panel_bg">#F2111111</color>
+    <color name="rec_red">#FFFF3B30</color>
+    <color name="text_secondary">#80FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">HorizonCam</string>
+    <style name="Theme.HorizonCam" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

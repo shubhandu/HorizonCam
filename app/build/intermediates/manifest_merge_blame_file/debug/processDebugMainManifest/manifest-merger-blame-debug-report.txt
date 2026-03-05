@@ -1,0 +1,155 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.horizoncam"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:4:5-65
+11-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:4:22-62
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:5:5-71
+12-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:5:22-68
+13    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+13-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:6:5-85
+13-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:6:22-82
+14    <uses-permission
+14-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:7:5-8:38
+15        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+15-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:7:22-78
+16        android:maxSdkVersion="28" />
+16-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:8:9-35
+17
+18    <uses-feature
+18-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:10:5-85
+19        android:name="android.hardware.camera2"
+19-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:10:19-58
+20        android:required="true" />
+20-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:10:59-82
+21    <uses-feature
+21-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:11:5-95
+22        android:name="android.hardware.sensor.gyroscope"
+22-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:11:19-67
+23        android:required="false" />
+23-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:11:68-92
+24
+25    <permission
+25-->[androidx.core:core:1.12.0] C:\Users\shubh\.gradle\caches\8.13\transforms\dff2739909f2819f8eba75e3c3656988\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.horizoncam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.12.0] C:\Users\shubh\.gradle\caches\8.13\transforms\dff2739909f2819f8eba75e3c3656988\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.12.0] C:\Users\shubh\.gradle\caches\8.13\transforms\dff2739909f2819f8eba75e3c3656988\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.horizoncam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.12.0] C:\Users\shubh\.gradle\caches\8.13\transforms\dff2739909f2819f8eba75e3c3656988\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.12.0] C:\Users\shubh\.gradle\caches\8.13\transforms\dff2739909f2819f8eba75e3c3656988\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:13:5-28:19
+32        android:allowBackup="true"
+32-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:14:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.12.0] C:\Users\shubh\.gradle\caches\8.13\transforms\dff2739909f2819f8eba75e3c3656988\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:label="@string/app_name"
+36-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:15:9-41
+37        android:supportsRtl="true"
+37-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:16:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.HorizonCam" >
+39-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:17:9-48
+40        <activity
+40-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:18:9-27:20
+41            android:name="com.horizoncam.MainActivity"
+41-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:19:13-41
+42            android:exported="true"
+42-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:20:13-36
+43            android:screenOrientation="portrait"
+43-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:21:13-49
+44            android:windowSoftInputMode="stateHidden" >
+44-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:22:13-54
+45            <intent-filter>
+45-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:23:13-26:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:24:17-69
+46-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:24:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:25:17-77
+48-->C:\Projects\horizonlock\app\src\main\AndroidManifest.xml:25:27-74
+49            </intent-filter>
+50        </activity>
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+54            android:authorities="com.horizoncam.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\shubh\.gradle\caches\8.13\transforms\3059fa4c83c28012c41c9ea1462525ea\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\shubh\.gradle\caches\8.13\transforms\8a08c7ad300d3ce838618bdf8fa34339\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\shubh\.gradle\caches\8.13\transforms\8a08c7ad300d3ce838618bdf8fa34339\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\shubh\.gradle\caches\8.13\transforms\8a08c7ad300d3ce838618bdf8fa34339\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+64                android:value="androidx.startup" />
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+65        </provider>
+66
+67        <receiver
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+68            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+69            android:directBootAware="false"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+70            android:enabled="true"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+71            android:exported="true"
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+72            android:permission="android.permission.DUMP" >
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+74                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+77                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+80                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+83                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\shubh\.gradle\caches\8.13\transforms\b7692e7503638585876d42fa055e8f26\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="panel_bg">#F2111111</color>
+    <color name="accent_green">#FF00C878</color>
+    <color name="rec_red">#FFFF3B30</color>
+    <color name="text_secondary">#80FFFFFF</color>
+</resources>
